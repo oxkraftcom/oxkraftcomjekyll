@@ -3,7 +3,7 @@ title: OXKRAFT
 email: vali@oxkraft.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://oxkraft.com" # the base hostname & protocol for your site
 twitter_username: oxkraftcom
 github_username:  oxkraftcom
 
