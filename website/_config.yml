@@ -8,5 +8,7 @@ twitter_username: oxkraftcom
 github_username:  oxkraftcom
 horia_mail:  horia@oxkraft.com
 
+highlighter: rouge
+
 # Build settings
 markdown: kramdown
