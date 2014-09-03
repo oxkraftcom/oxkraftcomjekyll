@@ -9,6 +9,9 @@
         // Global configuration
         "config",
 
+        // Vendors
+        "vendors/syntax-highlighting",
+
         // Helpers
         "helpers/functions",
         "helpers/mixins",
@@ -16,12 +19,95 @@
         // Resets and base styles
         "base/reset",
 
-        // Vendors
-        "vendors/syntax-highlighting",
-
         // Layouts
         "layouts/all",
 
         // Pages
         "pages/home"
 ;
+
+
+// temp coming soon page
+.page-content {
+        padding: 0
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+
+  section {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    &.col-1 {
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: url("{{site.url}}/assets/dress.jpg");
+        background-position: center center;
+        background-size: cover;
+        @media all and (max-width: 699px) and (min-width: 0px) {
+          display: none
+        }
+    }
+
+    &.col-2 {
+        @media all and (max-width: 699px) and (min-width: 0px) {
+          width: 100%;
+        }
+      right: 0;
+      background: #000015;
+
+      article {
+        color: #fff;
+        text-align: center;
+
+        * {
+          position: absolute;
+          width: 100%;
+        }
+
+        h1 {
+          bottom: 125px;
+
+          text-transform: uppercase;
+
+          font-size: 1.4rem;
+          font-weight: 300;
+          letter-spacing: .6rem;
+          text-indent: .6rem;
+        }
+
+        h2 {
+          font-size: .8rem;
+          font-weight: 800;
+          letter-spacing: .1rem;
+          text-indent: .1rem;
+          text-transform: uppercase;
+
+          &.top {
+            top: 100px;
+          }
+
+          &.bottom {
+            bottom: 100px;
+          }
+        }
+
+        p {
+          top: 50%;
+
+          margin: -1em 0 0;
+
+          font-size: 3.5rem;
+
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
