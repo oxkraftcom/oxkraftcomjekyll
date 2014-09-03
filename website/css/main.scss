@@ -31,7 +31,15 @@
 .page-content {
         padding: 0
 }
-
+.logo {
+        // background: url("{{site.url}}/assets/oxkraft4-w.png");
+        background: url("/assets/oxkraft4-w.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        margin-top: 100px;
+}
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
@@ -47,7 +55,8 @@ body {
         left: 0;
         width: 50%;
         height: 100%;
-        background: url("{{site.url}}/assets/dress.jpg");
+        // background: url("{{site.url}}/assets/o.jpg");
+        background: url("/assets/poly.png");
         background-position: center center;
         background-size: cover;
         @media all and (max-width: 699px) and (min-width: 0px) {
